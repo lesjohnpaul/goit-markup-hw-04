@@ -479,6 +479,11 @@ main {
 
 }
 
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+
 .customers-link {
   display: flex;
   width: 100%;
