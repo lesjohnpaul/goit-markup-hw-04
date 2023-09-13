@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Raleway";
-  font-weight: 400px;
+  font-width: 400px;
   src: url("/fonts/Raleway-Bold.ttf");
 }
 
@@ -28,7 +28,7 @@ body {
   font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-width: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -169,7 +169,7 @@ main {
   text-decoration: none;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-width: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -178,7 +178,7 @@ main {
   color: var(--color-navyblue);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-width: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -189,7 +189,7 @@ main {
   text-decoration: none;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400px;
+  font-width: 400px;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -207,7 +207,7 @@ main {
   color: var(--color-navyblue);
   font-size: 18px;
   font-style: normal;
-  font-weight: 800;
+  font-width: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
@@ -240,7 +240,7 @@ main {
   text-align: center;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
+  font-width: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
   margin-bottom: 40px;
@@ -254,7 +254,7 @@ main {
   align-items: flex-start;
   color: var(--color-white);
   background-color: var(--color-iris);
-  font-weight: 500;
+  font-width: 500;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -278,6 +278,24 @@ main {
   align-items: center;
   gap: 24px;
 }
+
+.features-icon {
+  height: 64px;
+  width: 64px;
+}
+
+.features-svg-box {
+  width: 264px;
+  height: 112px;
+  background-color: var(--color-cloud);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+
 
 .features-item-title {
   color: var(--navyblue, #2e2f42);
@@ -308,7 +326,7 @@ main {
 .services-title {
   text-align: center;
   font-size: 32px;
-  font-weight: 500;
+  font-width: 500;
   margin-bottom: 40px;
   color: var(--color-navyblue);
 }
@@ -332,25 +350,22 @@ main {
   gap: 32px;
   background: var(--color-white);
   border-radius: 0px 0px 4px 4px;
-  background: var(--WHITE, #FFF);
+  background: var(--color-white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
   padding-bottom: 32px;
+  gap: 32px;
   width: 100%;
-
+  text-align: center;
 }
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
 }
 
 
@@ -358,7 +373,7 @@ main {
   text-align: center;
   font-size: 36px;
   font-style: normal;
-  font-weight: 700;
+  font-width: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
@@ -370,7 +385,7 @@ main {
   font-size: 20px;
   text-align: center;
   font-style: normal;
-  font-weight: 500;
+  font-width: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }
@@ -380,11 +395,68 @@ main {
   text-align: center;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-width: 400;
   line-height: 24px;
   /* 150% */
   letter-spacing: 0.32px;
+
 }
+
+.team-item-image {
+  height: 260px;
+  width: 264px;
+
+}
+
+.team-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+
+}
+
+.social-item {
+  height: 40px;
+  width: 40px;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cloud);
+  background-color: var(--color-iris);
+
+}
+
+.team-social-link:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cloud);
+  background-color: var(--color-ocean);
+
+}
+
+
+.social-icon {
+  height: 16px;
+  width: 16px;
+  fill: var(--color-white);
+}
+
+
+
+
+
+
 
 /* Footer Section */
 
@@ -400,7 +472,7 @@ main {
 .footer-text {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-width: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
   margin-top: 17.5px;
@@ -516,7 +588,7 @@ main {
   color: var(--color-navyblue);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-we: 500;
   letter-spacing: 0.4px;
 }
 
