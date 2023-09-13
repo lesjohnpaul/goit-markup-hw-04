@@ -22,6 +22,7 @@
   --color-slate: #434455;
   --color-lightslate: #8e8f99;
   --color-cornflower: #e7e9fc;
+  --color-green: #31D0AA;
 }
 
 body {
@@ -169,7 +170,7 @@ main {
   text-decoration: none;
   font-size: 16px;
   font-style: normal;
-  font-width: 500;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -178,7 +179,7 @@ main {
   color: var(--color-navyblue);
   font-size: 16px;
   font-style: normal;
-  font-width: 500;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -189,7 +190,7 @@ main {
   text-decoration: none;
   font-size: 16px;
   font-style: normal;
-  font-width: 400px;
+  font-weight: 400px;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -207,7 +208,7 @@ main {
   color: var(--color-navyblue);
   font-size: 18px;
   font-style: normal;
-  font-width: 800;
+  font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
@@ -488,19 +489,30 @@ main {
   display: flex;
   width: 100%;
   height: 100%;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--color-lightslate);
   border-radius: 5px;
   justify-content: center;
   align-items: center;
-  color: #8e8f99;
+  color: var(--color-lightslate);
 }
 
+.customers-link:hover {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-ocean);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-ocean);
+}
 
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
+
 
 
 
@@ -536,7 +548,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
@@ -580,8 +592,12 @@ main {
   flex-direction: column;
   gap: 32px;
   background: var(--color-white);
-  background: var(--WHITE, #FFF);
+  border: 1px solid var(--color-cornflower);
+}
+
+.portfolio-list-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
 }
 
 .porfolio-list-details {
@@ -596,18 +612,6 @@ main {
 
 
 
-/*
-.portfolio-list-details {
-  display: flex;
-  flex-direction: column;
-  margin-top: 32px;
-  margin-bottom: 32px;
-} */
-
-/* .services-category-button.active {
-  background-color: var(--color-iris);
-  color: var(--color-white); 
-} */
 
 .portfolio-filter-button:hover {
   background-color: var(--color-ocean);
@@ -632,9 +636,9 @@ main {
 
 .portfolio-name {
   color: var(--color-navyblue);
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
-  font-we: 500;
+  font-weight: 500;
   letter-spacing: 0.4px;
 }
 
@@ -651,7 +655,7 @@ main {
 .logo-studio {
   font-family: "Raleway";
   color: var(--color-navyblue);
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 21px;
@@ -662,10 +666,65 @@ main {
 .footerlogo-studio {
   font-family: "Raleway";
   color: var(--color-white);
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-social-text {
+  margin-left: 120px;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+}
+
+.footer-social-item {
+  height: 40px;
+  width: 40px;
+
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cloud);
+  background-color: var(--color-iris);
+  margin-left: 120px;
+  margin-top: 16px;
+
+}
+
+.footer-social-link:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cloud);
+  background-color: var(--color-green);
+
+}
+
+
+.footer-social-icon {
+  height: 16px;
+  width: 16px;
+  fill: var(--color-white);
 }
