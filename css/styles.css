@@ -680,13 +680,19 @@ main {
 }
 
 .footer-social-text {
+  display: flex;
+}
+
+.footer-social-wrapper {
   margin-left: 120px;
+
 }
 
 .footer-social-list {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  gap: 16px;
+  margin-top: 16px;
 
 }
 
@@ -705,8 +711,6 @@ main {
   justify-content: center;
   color: var(--color-cloud);
   background-color: var(--color-iris);
-  margin-left: 120px;
-  margin-top: 16px;
 
 }
 
