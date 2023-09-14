@@ -451,7 +451,7 @@ main {
 .social-icon {
   height: 16px;
   width: 16px;
-  fill: var(--color-white);
+  fill: currentColor;
 }
 
 
@@ -723,5 +723,5 @@ main {
 .footer-social-icon {
   height: 16px;
   width: 16px;
-  fill: var(--color-white);
+  fill: currentColor;
 }
